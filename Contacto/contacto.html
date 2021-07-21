@@ -19,16 +19,19 @@
         <div class="container">
             <div class="contact-section">
                 <h1>Contacto</h1>
-                <form class="contact-form" action="../index.html" method="POST">
-                    <input type="text" class="contact-form-text" placeholder="Nombre y Apellido">
-                    <input type="email" class="contact-form-text" placeholder="Correo electronico">
+                <form id="form" class="contact-form" action="../index.html" method="POST">
+                    <input name="name" type="text" class="contact-form-text" placeholder="Nombre y Apellido">
+                    <input name="email" type="email" class="contact-form-text" placeholder="Correo electronico">
                     <input type="tel" class="contact-form-text" name="telefono" placeholder="Celular">
-                    <textarea class="contact-form-text" placeholder="Motivo de contacto" cols="30" rows="10"></textarea>
+                    <textarea id="message" name="message" class="contact-form-text" placeholder="Motivo de contacto" cols="30" rows="10"></textarea>
                     <input type="submit" class="contact-form-btn" value="Enviar">
                 </form>
+                <a id="send" href="mailto:Malvinasale82@gmail.com">email</a>
             </div>
         </div>
     </section>
+
+    <script src="contacto.js"></script>
 
 </body>
 </html>
